@@ -431,8 +431,8 @@ nav > a:hover {
 }
 
 .box_coloumn > div > div > p {
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .box_coloumn > a {
@@ -440,6 +440,10 @@ nav > a:hover {
   color: #009999;
   font-size: 15px;
   font-weight: 600;
+}
+
+.box_coloumn > a:hover {
+  color: rgb(188, 74, 53);
 }
 
 .header_box {
@@ -482,8 +486,14 @@ nav > a:hover {
 .scroll_bar ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.scroll_bar:hover {
-  color: #666666;
+
+.scroll_bar > .products1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  gap: 70px;
+  margin-top: 10px;
 }
 
 .scroll_bar > .products {
@@ -491,11 +501,108 @@ nav > a:hover {
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-  gap: 20px;
+  gap: 70px;
   margin-top: 10px;
 }
 
-.scroll_bar > .products > img {
+.slider_1_shoes {
+  width: 300px;
+  height: 130px;
+  margin-top: 30px;
+}
+
+.scroll_bar_priced {
+  background: #fff;
+  padding: 20px;
+  margin: 0 30px;
+  margin-bottom: 15px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.scroll_bar_priced ::-webkit-scrollbar {
+  height: 10px;
+  margin-top: 15px;
+}
+.scroll_bar_priced ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.scroll_bar_priced ::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  border: 4px solid transparent;
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 0 0 10px;
+          box-shadow: inset 0 0 0 10px;
+}
+.scroll_bar_priced ::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.scroll_bar_priced ::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.scroll_bar_priced ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll_bar_priced .products_priced {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  min-width: 210px;
+  background: #fbfbfb;
+}
+
+.product_container > p {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4823529412);
+}
+
+.product_offer > p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  background: #be0b3b;
+  padding: 2px 5px;
+  border-radius: 2px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.product_offer > span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #be0b3b;
+  margin-left: 3px;
+}
+
+.product_container > h4 {
+  font-size: 15px;
+  color: #525252;
+  font-weight: 400;
+}
+
+.product_container > div > a > img {
   width: 200px;
-  height: 200px;
+  height: 150px;
 }
